@@ -1,112 +1,68 @@
-# ComfyUI – workflow_LTX (fixed)
+# ComfyUI LTX Workflow for Job 000010
 
-## Por qué fallaba
+## Descripción
 
-El archivo `workflow_LTX.json` no era un workflow exportado por ComfyUI.  
-Era un blueprint semántico con secciones, notas y nombres de nodos, pero sin un grafo de canvas válido en el formato que ComfyUI puede importar.
+Esta carpeta contiene el workflow final de ComfyUI para generar un short vertical con LTX 2.3 usando audio real del job `000010`.
 
-El error `Prompt has no outputs` encaja exactamente con esto:  
-ComfyUI solo ejecuta ramas del grafo que terminan en nodos de salida reales.  
-Tu archivo original no definía un canvas válido con nodos, enlaces (`links`) e IDs ejecutables conectados hasta un nodo de salida.
+El workflow principal ya incluye la corrección necesaria para que los nodos `CFGGuider` tengan conectado el input obligatorio `negative`.
 
----
+## Workflow principal
 
-## Qué diferencia hay entre tu JSON original y un workflow real
+Archivo a usar:
 
-Un workflow real de canvas/frontend de ComfyUI contiene al menos:
+- `workflow_LTX_000010_final.json`
 
-- `version`, `last_node_id`, `last_link_id`
-- `nodes[]` con:
-  - `id`
-  - `type`
-  - `pos`
-  - `size`
-  - `flags`
-  - `order`
-  - `mode`
-  - `properties`
-- `links[]` con conexiones reales entre nodos (slots)
-- `widgets_values` para los valores de la interfaz
-- Opcionalmente:
-  - `groups`
-  - `config`
-  - `extra`
+Este es el único workflow que debes importar como versión final de trabajo.
 
-Tu archivo original, en cambio, describía intenciones como:
+## Audio utilizado
 
-- `section_A_input`
-- `section_B_models`
-- `workflow_graph`
-- `notes`
-- `usage_instructions`
+Audio fuente del proyecto:
 
-Esto es útil para documentar, pero **ComfyUI no lo interpreta como un workflow ejecutable**.
+- `C:\Users\vhgal\Documents\desarrollo\ia\AI-video-automation\video-dataset\jobs\000010\audio\000010_narration.wav`
 
----
+Para que ComfyUI lo cargue correctamente, el archivo `000010_narration.wav` debe estar disponible dentro de `ComfyUI/input`.
 
-## Formato seguido
+## Modelos utilizados
 
-Se ha seguido el formato **Workflow JSON 0.4**, porque:
+- `ltx-2-3-22b-dev-Q4_K_M.gguf`
+- `LTX23_audio_vae_bf16.safetensors`
+- `LTX23_video_vae_bf16.safetensors`
+- `gemma_3_12B_it_fp4_mixed.safetensors`
+- `ltx-2.3_text_projection_bf16.safetensors`
+- `ltx-2.3-22b-distilled-lora-dynamic_fro09_avg_rank_105_bf16.safetensors`
+- `ltx-2.3-spatial-upscaler-x2-1.0.safetensors`
 
-- Los ejemplos de LTX instalados en tu ComfyUI usan `version: 0.4`
-- Tus workflows reales en `user/default/workflows` también usan este formato
-- Es el estándar actual del frontend de ComfyUI para exportación/importación
+## Cómo importarlo en ComfyUI
 
----
+1. Abre ComfyUI.
+2. Importa `workflow_LTX_000010_final.json`.
+3. Verifica que `000010_narration.wav` esté disponible en `ComfyUI/input`.
+4. Confirma que los modelos listados arriba estén instalados y visibles para ComfyUI.
+5. Ejecuta el workflow.
 
-## Qué se corrigió
+## Correcciones aplicadas
 
-- Se transformó el blueprint en un **grafo real de ComfyUI**
-- Se añadieron:
-  - nodos con IDs válidos
-  - conexiones (`links`) completas
-  - valores de widgets (`widgets_values`)
-- Se incluyeron nodos de salida reales:
-  - `SaveImage` (fallback seguro)
-  - `CreateVideo` + `SaveVideo` (pipeline completo)
-- Se respetó la estructura lógica del pipeline LTX:
-  - input → latents → conditioning → sampling → refine → decode → output
+El workflow original tenía un error de validación en ambos nodos `CFGGuider` porque el input obligatorio `negative` estaba sin conectar.
 
----
+Ese problema ya fue corregido en el workflow final conectando la salida `negative` de `LTXVConditioning` a los dos `CFGGuider`.
 
-## Recomendación de uso
+## Archivos archivados
 
-1. Importa primero:
-   - `workflow_LTX_fixed_minimal.json`
+La carpeta `archive` conserva material anterior o de referencia para no mezclarlo con la versión final:
 
-2. Verifica:
-   - que aparecen nodos en el canvas
-   - que no hay error `Prompt has no outputs`
+- `workflow_LTX_000010_real.json`: versión anterior con el error de `CFGGuider negative`.
+- `README_fix_negative.md`: nota técnica del arreglo aplicado, ya integrada a este README.
+- `comfyui.txt`: referencia auxiliar histórica.
+- `LTX_shorts_workflow_template.md`: plantilla o referencia de trabajo anterior.
 
-3. Ejecuta una prueba
+## Estructura recomendada
 
-4. Luego importa:
-   - `workflow_LTX_fixed.json`
+- `README.md`
+- `workflow_LTX_000010_final.json`
+- `archive/`
 
----
+## Workflow a importar
 
-## Notas importantes
+Importa este archivo:
 
-- Si `SaveVideo` falla:
-  - puede ser por codec o diferencias de build
-  - usa `SaveImage` para validar el flujo
-
-- Si falta un nodo:
-  - probablemente es un **custom node no instalado**
-
-- Si falla `LoadAudio`:
-  - asegúrate de que el archivo `.wav` está en `ComfyUI/input/`
-
----
-
-## Conclusión
-
-El problema no era de parámetros ni de modelos, sino de **estructura**:  
-el archivo original no era un workflow ejecutable.
-
-Ahora el sistema está en estado correcto:  
-✔ workflow válido  
-✔ nodos conectados  
-✔ outputs reales  
-
-Cualquier error nuevo ya será de **compatibilidad o entorno**, no de base.
+- `workflow_LTX_000010_final.json`
