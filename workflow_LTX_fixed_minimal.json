@@ -1,0 +1,150 @@
+﻿{
+    "id":  "c4ac8db8-1bb2-4478-bd61-af733b61b5b4",
+    "revision":  0,
+    "last_node_id":  2,
+    "last_link_id":  1,
+    "nodes":  [
+                  {
+                      "id":  1,
+                      "type":  "EmptyImage",
+                      "pos":  [
+                                  -320,
+                                  -80
+                              ],
+                      "size":  [
+                                   280,
+                                   130
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  0,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "widget":  {
+                                                        "name":  "width"
+                                                    },
+                                         "link":  null,
+                                         "name":  "width",
+                                         "type":  "INT"
+                                     },
+                                     {
+                                         "widget":  {
+                                                        "name":  "height"
+                                                    },
+                                         "link":  null,
+                                         "name":  "height",
+                                         "type":  "INT"
+                                     },
+                                     {
+                                         "widget":  {
+                                                        "name":  "batch_size"
+                                                    },
+                                         "link":  null,
+                                         "name":  "batch_size",
+                                         "type":  "INT"
+                                     },
+                                     {
+                                         "widget":  {
+                                                        "name":  "color"
+                                                    },
+                                         "link":  null,
+                                         "name":  "color",
+                                         "type":  "INT"
+                                     }
+                                 ],
+                      "outputs":  [
+                                      {
+                                          "links":  [
+                                                        1
+                                                    ],
+                                          "name":  "IMAGE",
+                                          "type":  "IMAGE"
+                                      }
+                                  ],
+                      "properties":  {
+                                         "Node name for S\u0026R":  "EmptyImage",
+                                         "cnr_id":  "comfy-core",
+                                         "ver":  "0.5.1"
+                                     },
+                      "widgets_values":  [
+                                             512,
+                                             512,
+                                             1,
+                                             0
+                                         ]
+                  },
+                  {
+                      "id":  2,
+                      "type":  "SaveImage",
+                      "pos":  [
+                                  60,
+                                  -40
+                              ],
+                      "size":  [
+                                   320,
+                                   100
+                               ],
+                      "flags":  {
+
+                                },
+                      "order":  1,
+                      "mode":  0,
+                      "inputs":  [
+                                     {
+                                         "link":  1,
+                                         "name":  "images",
+                                         "type":  "IMAGE"
+                                     }
+                                 ],
+                      "properties":  {
+
+                                     },
+                      "widgets_values":  [
+                                             "ComfyUI/import_check"
+                                         ]
+                  }
+              ],
+    "links":  [
+                  1,
+                  1,
+                  0,
+                  2,
+                  0,
+                  "IMAGE"
+              ],
+    "groups":  [
+                   {
+                       "id":  1,
+                       "title":  "Minimal Import Check",
+                       "bounding":  [
+                                        -350,
+                                        -120,
+                                        760,
+                                        250
+                                    ],
+                       "color":  "#3f789e",
+                       "font_size":  24,
+                       "flags":  {
+
+                                 }
+                   }
+               ],
+    "config":  {
+
+               },
+    "extra":  {
+                  "ds":  {
+                             "offset":  [
+                                            0,
+                                            0
+                                        ],
+                             "scale":  1
+                         },
+                  "frontendVersion":  "1.39.19",
+                  "workflowRendererVersion":  "LG",
+                  "note":  "Minimal built-in workflow to validate import and output-node detection."
+              },
+    "version":  0.4
+}
