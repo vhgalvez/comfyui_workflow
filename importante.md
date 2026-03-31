@@ -3,18 +3,28 @@ https://youtu.be/NW_PEiWKLmw?si=Jhag1fakhA4AtLqM
 LTX-2.3 with ID-LoRA 🔥 Generates a subject's appearance and voice in a single model
 
 
+https://youtu.be/koHbTAXVM8c?si=-pEBpMIEF06na5u7
+LTX 2.3 in ComfyUI - First Look! Workflows, Generation Times, Examples, GGUF's, and more!
+
+
+https://youtu.be/t4eVxZPP0b0?si=4cKN5BT1Khn1IhBK
+FLUX.2 EL MEJOR MODELO OPEN SOURCE, EN LOCAL Y GGUF
+
+
+https://youtu.be/d2y9G7u81-s?si=JPE7VYiYDzizpiu4
+✨WAN2.2✨ Generacion de video usando ComfyUI 🔥(SIN CENSURA)🔥
 
 
 
-https://youtu.be/koHbTAXVM8c?si=eTR07jAROyCw6GpA
 
 
 
 
 
-https://youtu.be/t4eVxZPP0b0?si=TWN6bqsJdSSu1Uiq
 
-https://youtu.be/d2y9G7u81-s?si=F_90mZkns605X9sA
+
+
+
 
 
 https://youtu.be/tiU5GiadP3k?si=B8957dEy6PHtGGrG
