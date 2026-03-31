@@ -66,3 +66,8 @@ La carpeta `archive` conserva material anterior o de referencia para no mezclarl
 Importa este archivo:
 
 - `workflow_LTX_000010_final.json`
+
+
+
+cd C:\Users\vhgal\AppData\Local\Programs\ComfyUI\resources\ComfyUI\models
+tree /f
