@@ -1,4 +1,10 @@
 
+https://youtu.be/NW_PEiWKLmw?si=Jhag1fakhA4AtLqM
+LTX-2.3 with ID-LoRA 🔥 Generates a subject's appearance and voice in a single model
+
+
+
+
 
 https://youtu.be/koHbTAXVM8c?si=eTR07jAROyCw6GpA
 
@@ -29,10 +35,6 @@ https://youtu.be/g0x3gbsr7i0?si=ZBhrYwB8Ksh9sSS_
 https://youtu.be/h2yYf0h3KDc?si=5pV7DeVSAXd4bySc
 
 
-
-
-https://youtu.be/NW_PEiWKLmw?si=Jhag1fakhA4AtLqM
-LTX-2.3 with ID-LoRA 🔥 Generates a subject's appearance and voice in a single model
 
 
 
