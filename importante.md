@@ -1,10 +1,8 @@
 
 
 https://youtu.be/koHbTAXVM8c?si=eTR07jAROyCw6GpA
-LTX 2.3 in ComfyUI - First Look! Workflows, Generation Times, Examples, GGUF's, and more! (pesado)
 
 
-https://youtu.be/FXztX0-ksjQ?si=HMnmjU3NZzQEOu8d
 
 
 
@@ -33,7 +31,11 @@ https://youtu.be/h2yYf0h3KDc?si=5pV7DeVSAXd4bySc
 
 
 
-https://drive.google.com/file/d/1RbmzBuoJQNUvkbHnWnSB--upllva_ifl/view
+https://youtu.be/NW_PEiWKLmw?si=Jhag1fakhA4AtLqM
+LTX-2.3 with ID-LoRA 🔥 Generates a subject's appearance and voice in a single model
+
+
+
 
 https://youtu.be/ughJERu85iY?si=bWervFOhR98PPp34
 
@@ -42,3 +44,6 @@ https://youtu.be/vAzhzUI6WKQ?si=Py85YqI7sA5VBYbw
 https://youtu.be/SzHnZ1oQHE8?si=M5bGS_mx_RIaqWwF
 
 https://youtu.be/NW_PEiWKLmw?si=W12seNc-NnWXGObr
+
+
+https://drive.google.com/file/d/1RbmzBuoJQNUvkbHnWnSB--upllva_ifl/view
