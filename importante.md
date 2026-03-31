@@ -1,4 +1,5 @@
 
+
 https://youtu.be/NW_PEiWKLmw?si=Jhag1fakhA4AtLqM
 LTX-2.3 with ID-LoRA 🔥 Generates a subject's appearance and voice in a single model
 
@@ -27,26 +28,20 @@ https://youtu.be/g0x3gbsr7i0?si=VXOUWoQ05Sf3dOZX
 WAN2.2 14B GRATIS EN LOCAL IMG2VID Y TXT2VID
 
 
-
-
-https://youtu.be/U-yW6hOVqSQ?si=QLrVRW7iKqPEGgl8
-
-https://youtu.be/g0x3gbsr7i0?si=ZBhrYwB8Ksh9sSS_
-
-https://youtu.be/h2yYf0h3KDc?si=5pV7DeVSAXd4bySc
+https://youtu.be/h2yYf0h3KDc?si=zVmf0g7Urc0Zj2pN
+How to Create Cinematic MV with LTX 2.3 in ComfyUI
 
 
 
+https://youtu.be/ughJERu85iY?si=7A_G1jY5140YYGek
+🟩 27 - ComfyUI: Cómo Entrenar LoRAs SIN COMPLICACIONES con Flux Trainer - Tutorial
 
 
-
-https://youtu.be/ughJERu85iY?si=bWervFOhR98PPp34
-
-https://youtu.be/vAzhzUI6WKQ?si=Py85YqI7sA5VBYbw
-
-https://youtu.be/SzHnZ1oQHE8?si=M5bGS_mx_RIaqWwF
-
-https://youtu.be/NW_PEiWKLmw?si=W12seNc-NnWXGObr
+https://youtu.be/vAzhzUI6WKQ?si=_ZWAGRAN8crB9zK7
+Ultimate ComfyUI LoRA Beginner Guide (Flux LoRA Tutorial)
 
 
-https://drive.google.com/file/d/1RbmzBuoJQNUvkbHnWnSB--upllva_ifl/view
+https://youtu.be/SzHnZ1oQHE8?si=ltVk2VtjoETZMLYN
+Aprende ComfyUI desde CERO 2025 📸 Tutorial para PRINCIPIANTES Paso a Paso
+
+
