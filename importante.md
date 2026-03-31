@@ -1,8 +1,12 @@
+
+
 https://youtu.be/koHbTAXVM8c?si=eTR07jAROyCw6GpA
-LTX 2.3 in ComfyUI - First Look! Workflows, Generation Times, Examples, GGUF's, and more!
+LTX 2.3 in ComfyUI - First Look! Workflows, Generation Times, Examples, GGUF's, and more! (pesado)
 
 
 https://youtu.be/FXztX0-ksjQ?si=HMnmjU3NZzQEOu8d
+
+
 
 https://youtu.be/t4eVxZPP0b0?si=TWN6bqsJdSSu1Uiq
 
