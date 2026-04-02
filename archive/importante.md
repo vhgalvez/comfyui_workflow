@@ -45,3 +45,12 @@ https://youtu.be/SzHnZ1oQHE8?si=ltVk2VtjoETZMLYN
 Aprende ComfyUI desde CERO 2025 📸 Tutorial para PRINCIPIANTES Paso a Paso
 
 
+https://youtu.be/dSz-QrbtcAo?si=fZXnVWVxB1L4jTic
+Cómo Instalar WAN 2.2 En GPUS con LOW VRAM
+
+
+
+
+
+
+https://comfyanonymous.github.io/ComfyUI_examples/wan22/
